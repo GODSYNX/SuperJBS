@@ -17,12 +17,20 @@
             padding: 15px 30px;
             font-size: 18px;
             cursor: pointer;
+            background-color: #007BFF; /* สีฟ้าสำหรับปุ่ม */
+            color: white; /* ข้อความสีขาว */
+            border: none; /* ไม่มีขอบ */
+            border-radius: 5px; /* มุมมน */
+            transition: background-color 0.3s; /* ทำให้เปลี่ยนสีเนียน */
+        }
+        button:hover {
+            background-color: #0056b3; /* สีฟ้าที่เข้มขึ้นเมื่อชี้เมาส์ */
         }
     </style>
 </head>
 <body>
     <div id="welcome">
-        <h1>ยินดีต้อนรับ</h1>
+        <h1>ยินดีต้อนรับสู่เว็บของตาต้านะ</h1> <!-- เปลี่ยนข้อความที่นี่ -->
         <button onclick="continueToVideo()">Continue</button>
     </div>
 
