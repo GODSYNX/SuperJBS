@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rickroll Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        #rickrollVideo {
+            display: none; /* ซ่อนวิดีโอเริ่มต้น */
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        function showRickroll() {
+            // แสดงวิดีโอเมื่อหน้าโหลด
+            var video = document.getElementById("rickrollVideo");
+            video.style.display = "block"; // แสดงวิดีโอ
+            video.play(); // เล่นวิดีโอ
+        }
+    </script>
+</head>
+<body onload="showRickroll()">
+    <h1>You've Been Rickrolled!</h1>
+    <video id="rickrollVideo" controls autoplay>
+        <source src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
